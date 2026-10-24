@@ -1,0 +1,25 @@
+{
+  "name": "genkiai",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "The static GenkiAI website for IMD seat 1843.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && node scripts/check-export.ts",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "check:export": "node scripts/check-export.ts",
+    "validate:browser": "node scripts/validate-browser.mjs"
+  },
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.5",
+    "axe-core": "4.14.0",
+    "playwright": "1.64.1",
+    "typescript": "7.0.2",
+    "vite": "8.3.5"
+  }
+}
